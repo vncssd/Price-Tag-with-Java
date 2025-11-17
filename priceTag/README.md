@@ -1,18 +1,68 @@
-## Getting Started
+## 🏷️ Price Tag CLI Generator
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um projeto de uma aplicação **CLI (Command Line Interface)** simples desenvolvida em **Java** para gerar etiquetas de preço formatadas para diferentes tipos de produtos: **comum**, **usado**, ou **importado**.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## ✨ Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O CLI aceita comandos para gerar etiquetas com formatação e cálculos específicos, dependendo do tipo de produto.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+* **Produto Comum:** Exibe apenas o **Nome** e o **Preço** do produto.
+* **Produto Usado:** Exibe o **Nome**, o **Preço** e a **Data de Fabricação** do produto (geralmente para fins de depreciação ou informação).
+* **Produto Importado:** Exibe o **Nome**, o **Preço** (após o cálculo da taxa de alfândega), e a **Taxa de Alfândega** utilizada.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 🛠️ Tecnologias Utilizadas
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Este projeto foi desenvolvido utilizando puramente a linguagem:
+
+* **Java** (versão 8 ou superior)
+
+---
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+Certifique-se de ter o **Java Development Kit (JDK)** instalado em sua máquina.
+
+### Compilação e Execução
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [LINK_DO_SEU_REPOSITORIO]
+    cd [pasta-do-projeto]
+    ```
+
+2.  **Compile os arquivos Java:**
+    Se o seu arquivo principal for `PriceTagCLI.java` e estiver no diretório `src/`:
+    ```bash
+    javac src/*.java
+    ```
+
+3.  **Execute o programa:**
+    Assumindo que sua classe principal se chama `PriceTagCLI`:
+    ```bash
+    java -cp src PriceTagCLI
+    ```
+    *Obs: Os comandos exatos podem variar dependendo da estrutura de pastas e do nome da sua classe principal.*
+
+---
+
+## 📝 Comandos de Exemplo (Uso)
+
+O CLI deverá interagir com o usuário solicitando os dados necessários. Embora a implementação exata do comando possa variar (seja por *flags* ou entrada interativa), a lógica de uso será a seguinte:
+
+| Tipo de Produto | Dados Necessários | Exemplo de Saída (Lógica) |
+| :--- | :--- | :--- |
+| **Comum** | Nome, Preço | Nome: TV, Preço: R$ 1500.00 |
+| **Usado** | Nome, Preço, Data de Fabricação | Nome: Cadeira Usada, Preço: R$ 80.00 (Data de Fabricação: 01/01/2022) |
+| **Importado** | Nome, Preço Original, Taxa de Alfândega (%) | Nome: Smartphone Importado, Preço (c/Taxa): R$ 3250.00 (Taxa: 15%) |
+
+---
+
+## 🤝 Contribuições
+
+Sinta-se à vontade para enviar *pull requests* ou abrir *issues* para melhorias e correções de bugs.
