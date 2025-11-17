@@ -9,7 +9,7 @@ Este é um projeto de uma aplicação **CLI (Command Line Interface)** simples d
 O CLI aceita comandos para gerar etiquetas com formatação e cálculos específicos, dependendo do tipo de produto.
 
 * **Produto Comum:** Exibe apenas o **Nome** e o **Preço** do produto.
-* **Produto Usado:** Exibe o **Nome**, o **Preço** e a **Data de Fabricação** do produto (geralmente para fins de depreciação ou informação).
+* **Produto Usado:** Exibe o **Nome**, o **Preço** e a **Data de Fabricação** do produto.
 * **Produto Importado:** Exibe o **Nome**, o **Preço** (após o cálculo da taxa de alfândega), e a **Taxa de Alfândega** utilizada.
 
 ---
