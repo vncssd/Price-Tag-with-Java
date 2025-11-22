@@ -32,6 +32,9 @@ public class Program {
 
         while (continueAdding) {
 
+            System.out.println("1 - Register a new product.");
+            System.out.println("2 - Update a product");
+            System.out.println("3 - Delete a product");
             System.out.print("Enter the number of products: ");
             int n = sc.nextInt();
 
@@ -105,9 +108,10 @@ public class Program {
             }
 
             System.out.println("");
-            System.out.print("ADD MORE PRODUCTS (Y/N)? ");
+            System.out.println("1 - RETURN TO MENU ");
+            System.out.println("2 - EXIT");
             String option = sc.next();
-            if (option.equals("n")) {
+            if (option.equals("2")) {
                 continueAdding = false;
             }
         }
